@@ -1,36 +1,27 @@
 import React from "react";
 import "../App.css";
+import InputComponent from "./Input";
+import ButtonComponent from "./Button";
+import H2 from "./H2";
+import Logo from "./Logo";
 
 function Singup() {
+ 
+
   return (
-    <form className="formulario-container">
-      <input type="text" id="nombre" placeholder="Ingrese su nombre" required />
-
-      <input
-        type="email"
-        id="email"
-        placeholder="Ingrese su correo electrónico"
-        required
-      />
-
-      <input
-        type="password"
-        id="contrasena"
-        placeholder="Ingrese su contraseña"
-        required
-      />
-
-      <input
-        type="tel"
-        id="telefono"
-        placeholder="Ingrese su número de teléfono"
-        required
-      />
-
-      <input id="direccion" placeholder="Ingrese su dirección" required></input>
-
-      <button type="submit">Enviar</button>
+    <>
+    <div class="signupFrm"></div>
+    <form className="form-container">
+      <Logo />
+      <H2 />
+      <InputComponent placeholder="First Name*" />
+      <InputComponent placeholder="Last Name*" />
+      <InputComponent placeholder="Username*"/>
+      <InputComponent placeholder="Password*"/>
+      <InputComponent placeholder="Confirm Password*"/>
+      <ButtonComponent>SING UP</ButtonComponent>
     </form>
+    </>
   );
 }
 

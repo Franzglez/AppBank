@@ -3,25 +3,43 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(224, 224, 233);
+  background-color: rgb(245, 245, 245);
 }
 
-.formulario-container {
+.form-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.formulario-container label {
+.form-container label {
   margin-bottom: 5px;
 }
 
-.formulario-container input,
-.formulario-container textarea {
+.form-container input,
+.form-container textarea {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-.formulario-container textarea {
+.form-container textarea {
   height: 10em; /* Ajusta la altura a 10 líneas */
+}
+
+.H2 { 
+  text-align: center
+
+}
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.H2{
+  margin-top: 0%;
+
 }

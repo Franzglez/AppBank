@@ -1,7 +1,5 @@
-import { useState } from "react";
-import Singup from "./components/singup";
+import Singup from "./components/Singup";
 import React from "react";
-
 import "./App.css";
 
 function App() {

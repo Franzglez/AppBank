@@ -1,15 +1,14 @@
-import PropTypes from 'prop-types';
+
 import Input from '@mui/joy/Input';
 
-function InputComponent({placeholder}) {
+function InputComponent({placeholder,onChange,type,value,name}) {
+
   return (
     <div className= "InputContainer">
-  <Input placeholder={placeholder}  variant="outlined"  sx={{ borderRadius:4}} />
+  <Input onChange={onChange} value={value} name={name} type={type} placeholder={placeholder}  variant="outlined"  sx={{ borderRadius:4}} />
 </div>)
 }
 
-InputComponent.propTypes = {
-  placeholder: PropTypes.string.isRequired,
-};
+
 
 export default InputComponent;

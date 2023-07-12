@@ -48,7 +48,7 @@ function Singup() {
           name="First Name"
           value={formData.firstName}
           onChange={(event) =>
-            setFormData({ ...formData, name: event.target.value })
+            setFormData({ ...formData, firstName: event.target.value })
           }
           placeholder="First Name*"
         ></InputComponent>
@@ -59,7 +59,7 @@ function Singup() {
           name="Last Name"
           value={formData.secondName}
           onChange={(event) =>
-            setFormData({ ...formData, name: event.target.value })
+            setFormData({ ...formData, secondName: event.target.value })
           }
           placeholder="Last Name*"
         ></InputComponent>
@@ -71,7 +71,7 @@ function Singup() {
           name="Username"
           value={formData.username}
           onChange={(event) =>
-            setFormData({ ...formData, name: event.target.value })
+            setFormData({ ...formData, username: event.target.value })
           }
           placeholder="Username"
         ></InputComponent>
@@ -82,7 +82,7 @@ function Singup() {
           name="Password"
           value={formData.password}
           onChange={(event) =>
-            setFormData({ ...formData, name: event.target.value })
+            setFormData({ ...formData, password: event.target.value })
           }
           placeholder="Password*"
         ></InputComponent>
@@ -94,7 +94,7 @@ function Singup() {
           name="Confirm Password"
           value={formData.confirmPassword}
           onChange={(event) =>
-            setFormData({ ...formData, name: event.target.value })
+            setFormData({ ...formData, confirmPassword: event.target.value })
           }
           placeholder="Confirm Password*"
         ></InputComponent>

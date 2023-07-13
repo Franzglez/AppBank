@@ -1,16 +1,13 @@
 import Singup from "./components/Singup";
-import React from "react";
 import "./App.css";
-import ButtonAppBar from "./components/Navbar";
-import MenuBar from "./components/Sidebar";
-import SideBar from './components/Sidebar';
+import UserSetting from "./components/UserSetting";
 
 function App() {
   return (
     <>
       <div className="container">
      
-       <SideBar />
+      <UserSetting></UserSetting>
       </div>
     </>
   );

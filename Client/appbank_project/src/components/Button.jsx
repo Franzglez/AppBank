@@ -1,17 +1,16 @@
 
 
 function Button(props) {
-  const { onClick, text, color, fontSize, width, height, borderRadius,border ,boxShadow,backgroundColor} = props;
+  const { onClick, text, color, fontSize, width, height, border, borderRadius, backgroundColor } = props;
 
   const buttonStyle = {
-    boxShadow: boxShadow,
-    border : border,
-    color: color ,
     backgroundColor: backgroundColor,
     width: width,
     height: height,
     fontSize: fontSize,
-    borderRadius: `${borderRadius}px`
+    borderRadius: `${borderRadius}px`,
+    color: color,
+    border: border,
   };
 
   return (

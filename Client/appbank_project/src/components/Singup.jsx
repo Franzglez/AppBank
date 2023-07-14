@@ -21,18 +21,18 @@ function Signup() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios
-      .post("http://localhost:9500/user", formData)
-      .then((response) => {
-        console.log(response.data); // Respuesta del servidor
-        // Puedes realizar acciones adicionales después de agregar el usuario
+    // axios
+    //   .post("http://localhost:9500/user", formData)
+    //   .then((response) => {
+    //     console.log(response.data); // Respuesta del servidor
+    //     // Puedes realizar acciones adicionales después de agregar el usuario
 
-        setMostrarComponenteB(true); // Mostrar el componente SideBar después de realizar la solicitud POST correctamente
-      })
-      .catch((error) => {
-        console.error(error);
-        // Manejar errores de manera adecuada
-      });
+      setMostrarComponenteB(true); // Mostrar el componente SideBar después de realizar la solicitud POST correctamente
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //     // Manejar errores de manera adecuada
+    //   });
   };
 
   return (

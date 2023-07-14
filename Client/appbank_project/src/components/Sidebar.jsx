@@ -13,7 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MailIcon from '@mui/icons-material/Mail';
 import Toolbar from '@mui/material/Toolbar';
 import NavBar from './Navbar';
-import BankAccountCard from './BankAccountCard';
+import UserSetting from './UserSetting';
 
 import DivLogoInfo from './divLogoInfo';
 
@@ -103,7 +103,7 @@ function MenuBar(props) {
       >
         <Toolbar />
         
-        <BankAccountCard></BankAccountCard>
+        <UserSetting></UserSetting>
       
       </Box>
     </Box>

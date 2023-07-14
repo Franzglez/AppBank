@@ -94,12 +94,13 @@ function Signup() {
           <Button
             text="SIGN UP"
             onClick={handleClick}
-            color="#096BDE"
+            color="white"
             width="300px"
             height="30px"
             border="none"
             fontsize="50px"
             borderRadius={2}
+            backgroundColor="#1976D2"
           />
         </form>
       ) : (

@@ -1,5 +1,5 @@
 import Input from "./Input";
-import img2 from "../assets/img2.png";
+// import img2 from "../assets/img2.png";
 import Button from "./Button";
 
 function UserSetting() {
@@ -7,7 +7,7 @@ function UserSetting() {
   return (
     <>
       <div className="imagen">
-        <img src={img2} alt="user settings" />
+        {/* <img src={img2} alt="user settings" /> */}
       </div>
       <div className="info">
         <Input />

@@ -1,13 +1,14 @@
 import "../App.css";
 import { useState } from "react";
 import InputComponent from "./Input";
-import ButtonComponent from "./Button";
+import Button from "./Button";
 import H2 from "./H2";
 import Logo from "./Logo";
 import axios from "axios";
 import SideBar from "./Sidebar";
 
 function Signup() {
+  const handleClick = () => {};
   const [formData, setFormData] = useState({
     firstName: "",
     secondName: "",
@@ -90,10 +91,19 @@ function Signup() {
             placeholder="Confirm Password*"
           />
 
-          <ButtonComponent type="submit">SIGN UP</ButtonComponent>
+          <Button
+            text="SIGN UP"
+            onClick={handleClick}
+            color="#096BDE"
+            width="300px"
+            height="30px"
+            border="none"
+            fontsize="50px"
+            borderRadius={2}
+          />
         </form>
       ) : (
-        <SideBar />
+        <SideBar formData={formData} />
       )}
     </div>
   );

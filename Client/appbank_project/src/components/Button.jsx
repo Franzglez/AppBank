@@ -1,9 +1,22 @@
-import React from "react";
-import Button from "@mui/joy/Button";
 
-function ButtonComponent({ }) {
+
+function Button(props) {
+  const { onClick, text, color, fontSize, width, height, borderRadius } = props;
+
+  const buttonStyle = {
+    backgroundColor: color,
+    width: width,
+    height: height,
+    fontSize: fontSize,
+    borderRadius: `${borderRadius}px`,
+    color: "white",
+    border: "none",
+  };
+
   return (
-    <Button className="btn1" variant="contained" sx={{ color: "white",  borderRadius:4}} />
+    <button onClick={onClick} style={buttonStyle}>
+      {text}
+    </button>
   );
 }
 

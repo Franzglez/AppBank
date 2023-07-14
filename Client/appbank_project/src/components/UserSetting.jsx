@@ -1,23 +1,32 @@
-import React from 'react';
-import { TextField, Button } from '@mui/material';
+import Input from "./Input";
+import img2 from "../assets/img2.png";
+import Button from "./Button";
 
-const Formulario = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí puedes agregar la lógica para manejar los datos del formulario
-  };
-
+function UserSetting() {
+  const handleClick = () => {};
   return (
-    <form onSubmit={handleSubmit}>
-      <TextField label="Campo 1" variant="outlined" fullWidth margin="normal" />
-      <TextField label="Campo 2" variant="outlined" fullWidth margin="normal" />
-      <TextField label="Campo 3" variant="outlined" fullWidth margin="normal" />
-      <TextField label="Campo 4" variant="outlined" fullWidth margin="normal" />
-      <Button type="submit" variant="contained" color="primary">
-        Enviar
-      </Button>
-    </form>
+    <>
+      <div className="imagen">
+        <img src={img2} alt="user settings" />
+      </div>
+      <div className="info">
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+        <Button
+          text="SAVE"
+          onClick={handleClick}
+          color="#096BDE"
+          width="75px"
+          height="30px"
+          border="none"
+          fontsize="50px"
+          borderRadius={2}
+        />
+      </div>
+    </>
   );
-};
+}
 
-export default Formulario;
+export default UserSetting;
